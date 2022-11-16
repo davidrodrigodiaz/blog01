@@ -4,6 +4,7 @@ from .models import Post
 
 
 def post_list(request):
+    #este es un comentario
     posts = Post.objects.filter(create_date__lte=timezone.now()).order_by('create_date')
     #posts=Post.objects.all
 
